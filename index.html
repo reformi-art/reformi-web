@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reformi Art ry</title>
+  <meta name="description" content="Reformi Art ry on oululainen taideyhdistys, joka toteuttaa tilalähtöisiä ja väliaikaisia taideprojekteja.">
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --text: #111;
+      --muted: #555;
+      --line: #111;
+      --max: 880px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 48px;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 64px;
+    }
+
+    h1 {
+      font-size: clamp(56px, 13vw, 132px);
+      line-height: .85;
+      letter-spacing: -0.075em;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .lead {
+      max-width: 680px;
+      font-size: clamp(22px, 4vw, 34px);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin: 28px 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    section {
+      border-top: 1px solid var(--line);
+      padding: 34px 0;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin: 0 0 22px;
+    }
+
+    p {
+      margin: 0 0 18px;
+      max-width: 720px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .list {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+      max-width: 760px;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 22px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .year {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .item h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+      margin: 0 0 6px;
+    }
+
+    .item p {
+      margin: 0;
+    }
+
+    .callout {
+      padding-top: 46px;
+      padding-bottom: 46px;
+    }
+
+    .callout-text {
+      max-width: 760px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(30px, 6vw, 58px);
+      line-height: .96;
+      letter-spacing: -0.06em;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 760px;
+    }
+
+    .contact-box {
+      border: 1px solid var(--line);
+      padding: 18px;
+      min-height: 120px;
+    }
+
+    .contact-box strong {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      border-top: 2px solid var(--line);
+      margin-top: 48px;
+      padding-top: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .topline,
+      .item,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+
+      .topline {
+        margin-bottom: 42px;
+      }
+
+      .item {
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="topline">
+        <div>Reformi Art ry</div>
+        <div>Oulu</div>
+      </div>
+
+      <h1>Reformi<br>Art</h1>
+
+      <p class="lead">
+        Tilalähtöistä taidetta. Väliaikaisia näyttelyitä. Paikkoja, jotka ovat muutoksen kynnyksellä.
+      </p>
+    </header>
+
+    <section>
+      <h2>Mikä</h2>
+      <p>
+        Reformi Art ry on oululainen taideyhdistys, joka toteuttaa monitaiteellisia
+        kokonaisuuksia rakennuksiin ja tiloihin, joilla on oma historia, oma pinta
+        ja oma seuraava vaihe.
+      </p>
+      <p>
+        Tila ei ole vain tausta. Se on osa teosta.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mitä teemme</h2>
+      <p>
+        Tuomme yhteen taiteilijoita, tekijöitä, tiloja ja yleisöä. Näyttelyissä voi olla
+        esimerkiksi installaatioita, muraaleja, valoa, ääntä, videota, performanssia
+        ja muita nykytaiteen muotoja.
+      </p>
+      <p>
+        Usein kyse on tiloista, jotka ovat tyhjillään, muuttumassa tai katoamassa.
+        Hetkeksi niistä tulee avoimia kulttuuritiloja.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projektit</h2>
+
+      <div class="list">
+        <article class="item">
+          <div class="year">2025</div>
+          <div>
+            <h3>Arkkivisio</h3>
+            <p>Postipankin talo, Taka-Lyötynkatu 4, Oulu.</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="year">2024</div>
+          <div>
+            <h3>Mediart</h3>
+            <p>Monitaiteellinen kokonaisuus muuttuvassa tilassa.</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="year">2023</div>
+          <div>
+            <h3>Our Blueprints</h3>
+            <p>Tilalähtöinen purkutaidekokonaisuus.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Onko tiedossa tila?</h2>
+      <p class="callout-text">
+        Onko tiedossa rakennus, huone, halli tai muu paikka, joka voisi muuttua
+        hetkeksi taiteeksi?
+      </p>
+      <p>
+        Reformi Art ry etsii kiinnostavia tiloja, tekijöitä ja yhteistyökumppaneita.
+        Ota yhteyttä, jos haluat ehdottaa paikkaa, projektia tai yhteistyötä.
+      </p>
+    </section>
+
+    <section>
+      <h2>Yhteys</h2>
+
+      <div class="contact-grid">
+        <div class="contact-box">
+          <strong>Sähköposti</strong>
+          <a href="mailto:info@reformi.art">info@reformi.art</a>
+        </div>
+
+        <div class="contact-box">
+          <strong>Instagram</strong>
+          <a href="https://www.instagram.com/reformi.art/" rel="noopener" target="_blank">@reformi.art</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Reformi Art ry</div>
+      <div>reformi.art</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
